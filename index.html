@@ -2,14 +2,14 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>L'Autopastale - Pasta fresca in movimento</title>
     <link rel="icon" type="image/x-icon" href="LogoAutopastale.jpeg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Italiana&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header id="header">
@@ -18,31 +18,31 @@
                 <div class="logo">
                     <img src="LogoAutopastale.jpeg" alt="L'Autopastale Logo">
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#chi-siamo">Chi Siamo</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#eventi">Eventi</a></li>
-                    <li><a href="#contatti">Contatti</a></li>
-                </ul>
-                <div class="hamburger">
+                <div class="hamburger" id="hamburger-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#chi-siamo" class="nav-link">Chi Siamo</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#eventi" class="nav-link">Eventi</a></li>
+                    <li><a href="#contatti" class="nav-link">Contatti</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <section id="home" class="hero">
-    <div class="hero-background"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <h1>L'Autopastale</h1>
-        <h2>Pasta fresca in movimento nelle fiere del Ticino</h2>
-        <a href="#menu" class="btn-primary">Scopri il Menu</a>
-    </div>
-</section>
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>L'Autopastale</h1>
+            <h2>Pasta fresca in movimento nelle fiere del Ticino</h2>
+            <a href="#menu" class="btn-primary">Scopri il Menu</a>
+        </div>
+    </section>
 
     <section id="chi-siamo" class="about">
         <div class="container">
@@ -58,7 +58,6 @@
                     <a href="#contatti" class="btn-secondary">Contattaci</a>
                 </div>
                 <div class="about-image">
-                    <!-- Foto 2 - foodtruck vuoto (Autopastale_Foodtruck.jpeg) -->
                     <img src="Autopastale_Foodtruck.jpeg" alt="L'Autopastale Food Truck">
                 </div>
             </div>
@@ -72,9 +71,12 @@
                 <div class="divider"></div>
             </div>
             <div class="menu-intro">
-                <!-- Foto 1 - pasta fresca (PastaFresca_Autopastale.jpeg) -->
-                <img src="PastaFresca_Autopastale.jpeg" alt="Pasta Fresca dell'Autopastale">
-                <p>La nostra pasta è preparata fresca ogni giorno <br> con ingredienti selezionati e di alta qualità.</p>
+                <div class="menu-image">
+                    <img src="PastaFresca_Autopastale.jpeg" alt="Pasta Fresca dell'Autopastale">
+                </div>
+                <div class="menu-text">
+                    <p>La nostra pasta è preparata fresca ogni giorno con ingredienti selezionati e di alta qualità.</p>
+                </div>
             </div>
             <div class="menu-items">
                 <div class="menu-category">
@@ -128,33 +130,33 @@
     </section>
 
     <section id="contatti" class="contact">
-    <div class="container">
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="section-header">
-                    <h2>Contattaci</h2>
-                    <div class="divider"></div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+41 XX XXX XX XX</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>info@autopastale.ch</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>In giro per il Canton Ticino</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <div class="container">
+            <div class="section-header">
+                <h2>Contattaci</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+41 XX XXX XX XX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@autopastale.ch</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>In giro per il Canton Ticino</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer>
         <div class="container">
