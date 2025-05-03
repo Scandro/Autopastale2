@@ -168,7 +168,7 @@ header.scrolled {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('Clienti_Autopastale.jpeg');
+    background-image: url('Autopastale_Foodtruck.jpeg');
     background-size: cover;
     background-position: center;
     transform: translateZ(0);
@@ -182,7 +182,7 @@ header.scrolled {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: -1;
 }
 
@@ -284,7 +284,7 @@ header.scrolled {
 
 /* Menu Section */
 .menu {
-    background-color: var(--gray-color);
+    background-color: #fff6d4;
 }
 
 .menu-intro {
@@ -408,7 +408,7 @@ header.scrolled {
 
 /* Contact Section */
 .contact {
-    background-image: url('https://static.wixstatic.com/media/370b37_5cf049d965a249c9a20fe146ca1f8380~mv2.png/v1/fill/w_1905,h_370,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/370b37_5cf049d965a249c9a20fe146ca1f8380~mv2.png');
+    background-image: url('banner_autopastale.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -634,7 +634,7 @@ footer {
     }
     
     .hero h1 {
-        font-size: 4rem;
+        font-size: 6rem;
     }
     
     .hero h2 {
