@@ -14,33 +14,22 @@
     --dark-gray: #333333;
 }
 
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: var(--dark-color);
     background-color: var(--light-color);
-    overflow-x: hidden; /* Previene lo scroll orizzontale su mobile */
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 section {
-    padding: 60px 0;
-}
-
-img {
-    max-width: 100%; /* Assicura che le immagini non escano dal contenitore */
-    height: auto;
+    padding: 80px 0;
 }
 
 /* Header e Navigazione */
@@ -63,11 +52,11 @@ header.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .logo img {
-    height: 50px;
+    height: 60px;
 }
 
 .nav-menu {
@@ -76,7 +65,7 @@ header.scrolled {
 }
 
 .nav-menu li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .nav-menu a {
@@ -84,7 +73,6 @@ header.scrolled {
     color: var(--dark-color);
     font-weight: 600;
     transition: color 0.3s ease;
-    font-size: 0.95rem;
 }
 
 .nav-menu a:hover, .nav-menu a.active {
@@ -105,7 +93,7 @@ header.scrolled {
     transition: all 0.3s ease;
 }
 
-/* Hero Section - modificata per l'effetto parallax */
+/* Hero Section */
 .hero {
     height: 100vh;
     position: relative;
@@ -114,7 +102,7 @@ header.scrolled {
     justify-content: center;
     color: var(--light-color);
     text-align: center;
-    overflow: hidden;
+    overflow: hidden; /* Importante per contenere l'immagine parallax */
 }
 
 .hero-background {
@@ -127,7 +115,7 @@ header.scrolled {
     background-size: cover;
     background-position: center;
     transform: translateZ(0);
-    will-change: transform;
+    will-change: transform; /* Ottimizza le performance */
     z-index: -2;
 }
 
@@ -145,18 +133,17 @@ header.scrolled {
     z-index: 1;
     max-width: 800px;
     padding: 0 20px;
-    width: 90%;
 }
 
 .hero h1 {
     font-family: 'Italiana', serif;
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 
 .hero h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 30px;
     font-weight: 400;
 }
@@ -199,11 +186,11 @@ header.scrolled {
 /* Section Headers */
 .section-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .section-header h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-bottom: 15px;
     font-family: 'Italiana', serif;
 }
@@ -220,7 +207,7 @@ header.scrolled {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 50px;
 }
 
 .about-text, .about-image {
@@ -259,16 +246,13 @@ header.scrolled {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-bottom: 40px;
-    flex-wrap: wrap; /* Permette il wrapping su mobile */
-    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .menu-intro img {
-    margin-left: 10px;
+    margin left: 10px;
     margin-right: 30px;
     max-width: 400px;
-    width: 100%; /* Responsive */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -276,8 +260,6 @@ header.scrolled {
 .menu-intro p {
     font-size: 1.2rem;
     font-style: italic;
-    flex: 1;
-    min-width: 250px; /* Migliora la responsività */
 }
 
 .menu-category {
@@ -298,17 +280,10 @@ header.scrolled {
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px dashed #ddd;
-    flex-wrap: wrap; /* Migliora la visualizzazione su mobile */
 }
 
 .menu-item:last-child {
     border-bottom: none;
-}
-
-.item-info {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 10px;
 }
 
 .item-info h4 {
@@ -325,14 +300,13 @@ header.scrolled {
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--secondary-color);
-    padding-left: 10px;
 }
 
 /* Eventi Section */
 .events-calendar {
     background-color: var(--light-color);
     border-radius: 10px;
-    padding: 25px;
+    padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -348,7 +322,6 @@ header.scrolled {
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
-    flex-wrap: wrap; /* Migliora la visualizzazione su mobile */
 }
 
 .event-date {
@@ -360,12 +333,6 @@ header.scrolled {
     font-weight: bold;
     margin-right: 20px;
     min-width: 80px;
-    margin-bottom: 10px; /* Spazio aggiuntivo per mobile */
-}
-
-.event-info {
-    flex: 1;
-    min-width: 200px;
 }
 
 .event-info h4 {
@@ -377,13 +344,12 @@ header.scrolled {
     color: var(--dark-gray);
 }
 
-/* Contact Section - AGGIORNATA con l'estensione .avif */
+/* Contact Section */
 .contact {
     background-image: url('banner_autopastale.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: var(--light-color);
     padding: 60px 0;
     position: relative;
 }
@@ -404,24 +370,39 @@ header.scrolled {
     z-index: 2;
 }
 
-.contact .section-header h2, 
-.contact .divider {
-    color: var(--light-color);
-}
-
 .contact-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 .contact-info {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px 50px;
     border-radius: 10px;
     max-width: 500px;
     width: 100%;
+    color: var(--light-color);
+}
+
+.contact .section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact .section-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-family: 'Italiana', serif;
+    color: var(--light-color);
+}
+
+.contact .divider {
+    height: 3px;
+    width: 60px;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
 }
 
 .info-item {
@@ -434,7 +415,6 @@ header.scrolled {
     font-size: 1.5rem;
     margin-right: 15px;
     color: var(--primary-color);
-    min-width: 25px; /* Evita problemi di allineamento su mobile */
 }
 
 .info-item p {
@@ -467,6 +447,28 @@ header.scrolled {
     transform: translateY(-3px);
 }
 
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--light-color);
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
@@ -477,93 +479,46 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Migliora la visualizzazione su mobile */
-}
-
-.footer-logo {
-    margin-bottom: 15px;
 }
 
 .footer-logo img {
     height: 50px;
 }
 
-.footer-info {
-    text-align: center;
-    width: 100%;
-}
-
-/* Responsive avanzato */
-@media (max-width: 1024px) {
-    html {
-        font-size: 15px;
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 25px;
     }
     
-    .hero h1 {
-        font-size: 3rem;
+    .contact .section-header h2 {
+        font-size: 1.8rem;
     }
     
-    .hero h2 {
-        font-size: 1.2rem;
+    .info-item {
+        margin-bottom: 20px;
     }
     
-    .section-header h2 {
-        font-size: 2rem;
+    .info-item i {
+        font-size: 1.3rem;
     }
     
-    .about-content, .menu-intro {
-        gap: 30px;
-    }
-}
-
-@media (max-width: 992px) {
-    .about-content, .contact-content {
-        flex-direction: column;
-    }
-    
-    .about-image {
-        margin-top: 20px;
-    }
-    
-    .menu-intro {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .menu-intro img {
-        margin: 0 auto 20px;
-    }
-    
-    section {
-        padding: 50px 0;
+    .info-item p {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    html {
-        font-size: 14px;
-    }
-    
-    /* Header mobile */
-    .navbar {
-        padding: 10px 0;
-    }
-    
-    .logo img {
-        height: 40px;
-    }
-    
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 80px;
         flex-direction: column;
         background-color: var(--light-color);
         width: 100%;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 20px 0;
     }
 
     .nav-menu.active {
@@ -571,11 +526,7 @@ footer {
     }
 
     .nav-menu li {
-        margin: 15px 0;
-    }
-    
-    .nav-menu a {
-        font-size: 1rem;
+        margin: 20px 0;
     }
 
     .hamburger {
@@ -593,63 +544,17 @@ footer {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    
-    /* Hero mobile */
-    .hero {
-        height: 90vh;
-    }
-    
+
     .hero h1 {
         font-size: 2.5rem;
     }
     
     .hero h2 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
-    
-    .btn-primary, .btn-secondary {
-        padding: 10px 25px;
-        font-size: 0.95rem;
-    }
-    
-    /* Sections mobile */
-    .section-header {
-        margin-bottom: 30px;
-    }
-    
+
     .section-header h2 {
-        font-size: 1.8rem;
-    }
-    
-    .about-text h3, .menu-category h3, .events-calendar h3 {
-        font-size: 1.5rem;
-    }
-    
-    .menu-item {
-        padding-bottom: 15px;
-        margin-bottom: 15px;
-    }
-    
-    .item-info, .event-info {
-        width: 100%;
-    }
-    
-    .contact-info {
-        padding: 20px;
-    }
-    
-    .info-item {
-        margin-bottom: 15px;
-    }
-    
-    .social-link {
-        width: 40px;
-        height: 40px;
-    }
-    
-    /* Footer mobile */
-    footer {
-        padding: 20px 0;
+        font-size: 2rem;
     }
     
     .footer-content {
@@ -658,51 +563,6 @@ footer {
     }
     
     .footer-logo {
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    html {
-        font-size: 13px;
-    }
-    
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-    
-    .hero h2 {
-        font-size: 1rem;
-    }
-    
-    .section-header h2 {
-        font-size: 1.6rem;
-    }
-    
-    .btn-primary, .btn-secondary {
-        padding: 8px 20px;
-        font-size: 0.9rem;
-    }
-    
-    .menu-intro img {
-        max-width: 100%;
-    }
-    
-    .event-date {
-        margin-right: 10px;
-        padding: 8px;
-        min-width: 70px;
-    }
-    
-    .contact {
-        background-position: center center;
-    }
-    
-    .info-item i {
-        font-size: 1.3rem;
-    }
-    
-    .info-item p {
-        font-size: 0.95rem;
+        margin-bottom: 20px;
     }
 }
