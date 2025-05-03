@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Autopastale - Pasta fresca in movimento</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Italiana&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="LogoAutopastale.jpeg" alt="L'Autopastale Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#chi-siamo">Chi Siamo</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#eventi">Eventi</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>L'Autopastale</h1>
+        <h2>Pasta fresca in movimento nelle fiere del Ticino</h2>
+        <a href="#menu" class="btn-primary">Scopri il Menu</a>
+    </div>
+</section>
+
+    <section id="chi-siamo" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Chi Siamo</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>La nostra storia</h3>
+                    <p>L'Autopastale nasce dalla passione per la pasta fresca e dalla voglia di portarla nelle più belle fiere del Canton Ticino. Il nostro food truck giallo, ispirato agli iconici autopostali svizzeri, è ormai riconoscibile in tutto il cantone.</p>
+                    <p>Ogni giorno prepariamo pasta fresca artigianale seguendo ricette tradizionali italiane con ingredienti locali di alta qualità.</p>
+                    <a href="#contatti" class="btn-secondary">Contattaci</a>
+                </div>
+                <div class="about-image">
+                    <!-- Foto 2 - foodtruck vuoto (Autopastale_Foodtruck.jpeg) -->
+                    <img src="Autopastale_Foodtruck.jpeg" alt="L'Autopastale Food Truck">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Il Nostro Menu</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="menu-intro">
+                <!-- Foto 1 - pasta fresca (PastaFresca_Autopastale.jpeg) -->
+                <img src="PastaFresca_Autopastale.jpeg" alt="Pasta Fresca dell'Autopastale">
+                <p>La nostra pasta è preparata fresca ogni giorno <br> con ingredienti selezionati e di alta qualità.</p>
+            </div>
+            <div class="menu-items">
+                <div class="menu-category">
+                    <h3>Pasta Fresca</h3>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Tagliatelle al Ragù</h4>
+                            <p>Pasta all'uovo con ragù di carne fatto in casa</p>
+                        </div>
+                        <div class="item-price">CHF 12</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Gnocchi al Pesto</h4>
+                            <p>Gnocchi di patate con pesto genovese fresco</p>
+                        </div>
+                        <div class="item-price">CHF 11</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Ravioli ai Funghi</h4>
+                            <p>Ravioli ripieni di funghi con burro e salvia</p>
+                        </div>
+                        <div class="item-price">CHF 13</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h4>Spaghetti Carbonara</h4>
+                            <p>Spaghetti con uova, guanciale e pecorino</p>
+                        </div>
+                        <div class="item-price">CHF 12</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventi" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dove Trovarci</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="events-calendar">
+                <h3>Prossimi Eventi</h3>
+                <div class="event-list" id="eventList">
+                    <!-- Eventi generati dinamicamente con JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatti" class="contact">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="section-header">
+                    <h2>Contattaci</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+41 XX XXX XX XX</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@autopastale.ch</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>In giro per il Canton Ticino</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="LogoAutopastale.jpeg" alt="L'Autopastale Logo">
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2025 L'Autopastale. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
